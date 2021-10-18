@@ -1,0 +1,33 @@
+﻿@{ Layout = null; }
+
+
+<script src="~/js/signalr/dist/browser/signalr.js"></script>
+<script src="~/js/chat.js"></script>
+
+<script>
+    var connection = new signalR.HubConnectionBuilder().withUrl("/chatHub").build();
+
+    //Disable send button until connection is established
+
+
+    connection.on("ReceiveMessage", function(message, contador){
+        console.log(message);
+        console.log(contador);
+    });
+
+    var contador = 0
+    connection.start().then(
+
+        setInterval(gravarLog, 3000)
+
+    );
+    var contador = 0;
+
+    function gravarLog() {
+        
+        connection.invoke("SendMessage", 'Olá', contador);
+        contador++;
+    }
+
+
+</script>

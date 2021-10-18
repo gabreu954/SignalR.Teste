@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "dwZXZpdSqcO4wdnGjfZDABU9iwExqJgqEBV+hT7XHChLqq4QKjQAXwZ+kfwycnbHJz7qQHZ/u0kvCobQ9+X2RQ==",
+  "success": true,
+  "projectFilePath": "C:\\git\\SignalR.Teste\\SignalR.Teste.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Gabriel\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\3.1.18\\microsoft.netcore.app.host.win-x64.3.1.18.nupkg.sha512"
+  ],
+  "logs": []
+}
